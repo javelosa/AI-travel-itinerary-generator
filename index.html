@@ -15,41 +15,46 @@
       alt=""
     />
     <div class="container">
-      <header>
-        <h1>AI Travel Agent ✈️</h1>
-      </header>
-      <main>
-        <div class="form-container">
-          <form id="travel-input">
-            <input
-              type="text"
-              placeholder="Enter a destination and number of travel days."
-              autofocus
-              required
-              autocomplete="off"
-              class="instructions"
-              id="travel-instructions"
-            />
-            <small>e.g., Philippines for 5 days</small>
-            <input type="submit" class="submit-button" id="submit-button" />
-          </form>
-          <div class="itinerary hidden" id="itinerary"></div>
-        </div>
-      </main>
-      <script src="src/index.js"></script>
-      <footer>
-        This AI project is coded by
-        <a href="https://github.com/javelosa?tab=repositories" target="_blank"
-          >Edritz Javelosa</a
-        >
-        and is open-sourced on
-        <a href="https://github.com/javelosa/AI-Poem-Generator" target="_blank"
-          >GitHub</a
-        >. It is hosted by
-        <a href="https://ai-itinerary-agent.netlify.app/" target="_blank"
-          >Netlify</a
-        >.
-      </footer>
+      <div class="wrapper">
+        <header>
+          <h1>AI <br /><br />Travel <br /><br />Agent <br /><br />✈️</h1>
+        </header>
+        <main>
+          <div class="form-container">
+            <form id="travel-input">
+              <input
+                type="text"
+                placeholder="Enter a destination and number of travel days."
+                autofocus
+                required
+                autocomplete="off"
+                class="instructions"
+                id="travel-instructions"
+              />
+              <small>e.g., 5 days in the Philippines</small>
+              <input type="submit" class="submit-button" id="submit-button" />
+            </form>
+            <div class="itinerary hidden" id="itinerary"></div>
+          </div>
+        </main>
+
+        <script src="src/index.js"></script>
+        <footer>
+          This AI project is coded by
+          <a href="https://github.com/javelosa?tab=repositories" target="_blank"
+            >Edritz Javelosa</a
+          >
+          and is open-sourced on
+          <a
+            href="https://github.com/javelosa/AI-Poem-Generator"
+            target="_blank"
+            >GitHub</a
+          >. It is hosted by
+          <a href="https://ai-itinerary-agent.netlify.app/" target="_blank"
+            >Netlify</a
+          >.
+        </footer>
+      </div>
     </div>
   </body>
 </html>

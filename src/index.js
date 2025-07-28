@@ -14,12 +14,12 @@ function generateItinerary(event) {
   let itineraryElement = document.querySelector("#itinerary");
   let apiKey = "04a6b97ba438oct66060d748685ff445";
   let context =
-    "You are an AI travel agent who provides an itinerary for the specific destination and the number of travel days asked. Separate the title and itinerary each day with a <br />. In the end and separate line, add a short estimated cost and what the costs include (e.g, domestic flights, accommodation, food, etc). Make sure to follow the travel instructions.";
-  let prompt = `Travel instructions: Generate a travel itinerary about ${instructionsInput.value} with an estimated cost.`;
+    "You are an AI travel agent who help travelers with their itinerary for the specific destination and the number of travel days asked. You provide short yet specific activities, and at the end of the itinerary you also add an estimated cost of the travel. Add what the costs include (e.g, domestic flights, accommodation, food, etc). Make a separate line from day 1 of the itinerary from the travel destination. Make a new line, <br />, per day of itinerary. Make sure to follow the travel instructions.";
+  let prompt = `Travel instructions: Generate a travel itinerary about ${instructionsInput.value} with an estimated cost. Make a separate line from day 1 of the itinerary from the travel destination. Add <br /> per day of itinerary.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   itineraryElement.classList.remove("hidden");
-  itineraryElement.innerHTML = `Generating a travel itinerary about "<strong>${instructionsInput.value}</strong>"<span class="loading-dots"><span>.</span><span>.</span><span>.</span>
+  itineraryElement.innerHTML = `Generating a travel itinerary for "<strong>${instructionsInput.value}</strong>"<span class="loading-dots"><span>.</span><span>.</span><span>.</span>
     </span>`;
 
   //build API URL
