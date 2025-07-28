@@ -14,8 +14,8 @@ function generateItinerary(event) {
   let itineraryElement = document.querySelector("#itinerary");
   let apiKey = "04a6b97ba438oct66060d748685ff445";
   let context =
-    "You are an AI travel agent who provides an itinerary for the specific destination and the number of travel days asked. Separate each line with a <br />. Make sure to follow the travel instructions.";
-  let prompt = `Travel instructions: Generate a travel itinerary about ${instructionsInput.value}.`;
+    "You are an AI travel agent who provides an itinerary for the specific destination and the number of travel days asked. Separate the title and itinerary each day with a <br />. In the end and separate line, add a short estimated cost and what the costs include (e.g, domestic flights, accommodation, food, etc). Make sure to follow the travel instructions.";
+  let prompt = `Travel instructions: Generate a travel itinerary about ${instructionsInput.value} with an estimated cost.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   itineraryElement.classList.remove("hidden");
