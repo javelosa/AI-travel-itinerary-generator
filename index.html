@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Budget Travel Itinerary Generator</title>
   </head>
   <body>
@@ -30,9 +32,7 @@
             />
             <input type="submit" class="submit-button" id="submit-button" />
           </form>
-          <div class="itinerary hidden" id="itinerary">
-            Itinerary for destination will be here.
-          </div>
+          <div class="itinerary hidden" id="itinerary"></div>
         </div>
       </main>
       <script src="src/index.js"></script>
