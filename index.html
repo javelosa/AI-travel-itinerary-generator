@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Budget Travel Itinerary Generator</title>
+  </head>
+  <body>
+    <img
+      class="background-img"
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/254/original/pexels-element5-1051075.jpg?1753671866"
+      alt=""
+    />
+    <div class="container">
+      <header>
+        <h1>AI Travel Agent ✈️</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="travel-input">
+            <input
+              type="text"
+              placeholder="Enter a destination and number of travel days."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="travel-instructions"
+            />
+            <input type="submit" class="submit-button" id="submit-button" />
+          </form>
+          <div class="itinerary hidden" id="itinerary">
+            Itinerary for destination will be here.
+          </div>
+        </div>
+      </main>
+      <script src="src/index.js"></script>
+      <footer>
+        This AI project is coded by
+        <a href="https://github.com/javelosa?tab=repositories" target="_blank"
+          >Edritz Javelosa</a
+        >
+        and is open-sourced on
+        <a href="https://github.com/javelosa/AI-Poem-Generator" target="_blank"
+          >GitHub</a
+        >. It is hosted by <a href="" target="_blank">Netlify</a>.
+      </footer>
+    </div>
+  </body>
+</html>
